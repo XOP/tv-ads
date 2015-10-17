@@ -1,0 +1,16 @@
+@import "_variables.scss";
+
+@import "core/base.scss";
+@import "core/layout.scss";
+@import "core/normalize.scss";
+
+@import "elements/slide.scss";
+@import "elements/hero.scss";
+@import "elements/headings.scss";
+@import "elements/point.scss";
+@import "elements/hor-list.scss";
+
+@import "blocks/main.scss";
+@import "blocks/vacancy.scss";
+
+@import "atomic.scss";

@@ -1,0 +1,25 @@
+/* Horizontal list
+---------------------------------------------------------------------------------- */
+
+/*
+cssg
+
+	ul . hor-list
+		li . hor-list_i +
+
+*/
+
+.hor-list {
+	display: flex;
+	flex-direction: row;
+	align-items: top;
+
+	padding-top: $grid-2;
+	}
+
+	.hor-list_i {
+		flex: 1 0 auto;
+		}
+
+/* /Horizontal list
+---------------------------------------------------------------------------------- */

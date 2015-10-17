@@ -1,0 +1,120 @@
+/* Variables
+---------------------------------------------------------------------------------- */
+
+/* Vars
+-------------------------------------------------- */
+
+/* Font-family */
+$ff-main: "Circe Rounded", Tahoma, sans-serif;
+$ff-alt: Helvetica, Arial, sans-serif;
+
+
+/* Font-size */
+$fs-normal: 4rem;
+
+$fs-s: 3.2rem;
+$fs-l: 5rem;
+$fs-xl: 7.8rem;
+
+$fs-hero: 15.5rem;
+
+
+/* Colors */
+$c-bg: #868686;
+$c-base: #333;
+$c-white: #fff;
+$c-orange: #1b46bb;
+
+
+/* Line-height */
+$lh-normal: 1.65;
+$lh-head: 1.25;
+$lh-hero: 1.2;
+
+
+/* Offset */
+$offset-step: .4rem;
+
+$offset: $offset-step;
+$offset-2: calc($offset * 2);
+$offset-3: calc($offset * 3);
+$offset-4: calc($offset * 4);
+$offset-5: calc($offset * 5);
+
+/* Grid */
+$grid-step: 2rem;
+
+$grid: $grid-step;
+$grid-2: calc($grid * 2);
+$grid-3: calc($grid * 3);
+$grid-4: calc($grid * 4);
+$grid-5: calc($grid * 5);
+
+
+/* Container */
+$width-normal: 80%;
+
+
+/* Column */
+$col: calc($grid * 6);
+$col-gap: $grid-2;
+
+
+/* Paths */
+$path-img: assets/img/;
+
+
+/* Media queries */
+/* 16 : 9 rate */
+@custom-media --s screen and ( min-width: 800px ) and ( min-height: 450px );
+@custom-media --m screen and ( min-width: 1000px ) and ( min-height: 560px );
+@custom-media --n screen and ( min-width: 1400px ) and ( min-height: 790px );
+@custom-media --l screen and ( min-width: 1600px ) and ( min-height: 900px );
+
+
+/* Scroll */
+$scroll: 50px;
+
+
+/* Animation */
+$anim-t: 1.5s;
+
+/* /Vars */
+
+
+/* Mixins
+-------------------------------------------------- */
+
+@define-mixin trunc {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	}
+
+@define-mixin wrap {
+	display: block;
+	max-width: 100%;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	}
+
+@define-mixin font-smoothing {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    }
+
+@define-mixin cover {
+	top: 0; left: 0; right: 0; bottom: 0;
+	}
+
+@define-mixin preloader {
+	min-height: 50px;
+	&:empty {
+		background: $c-white url(../img/anim/spinner.gif) no-repeat 50%;
+		}
+	}
+
+/* /Mixins */
+
+/* /Variables
+---------------------------------------------------------------------------------- */

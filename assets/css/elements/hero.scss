@@ -1,0 +1,31 @@
+/* Hero heading
+---------------------------------------------------------------------------------- */
+
+/*
+Hero
+
+markup:
+<div class="hero">Hero title</div>
+
+Styleguide 4
+*/
+
+.hero {
+    @mixin font-smoothing;
+
+	padding: $grid 0;
+	margin-bottom: $grid-4;
+
+    font-family: $ff-main;
+    font-size: $fs-hero;
+    line-height: $lh-hero;
+    text-align: center;
+    }
+
+.hero__compact {
+	font-size: calc($fs-hero * .85);
+	letter-spacing: -.4rem;
+	}
+
+/* /Hero heading
+---------------------------------------------------------------------------------- */

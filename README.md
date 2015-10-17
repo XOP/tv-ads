@@ -1,2 +1,3 @@
-# tv-ads
-Basic slider adapted to TV screens
+# TV Ads
+
+> Assets for building responsive animated ads

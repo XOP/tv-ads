@@ -1,0 +1,88 @@
+/* Base
+---------------------------------------------------------------------------------- */
+
+/* Font-face
+-------------------------------------------------- */
+
+@font-face {
+	font-family: 'Circe Rounded';
+	src:
+		url('../fonts/Circe Rounded.woff') format('woff'),
+		url('../fonts/Circe Rounded.otf') format('opentype');
+	}
+
+/* /Font-face */
+
+
+/* Core
+-------------------------------------------------- */
+
+html {
+    height: 100%;
+
+	font-size: 5px;
+
+	@media(--m) {
+		font-size: 6px;
+		}
+
+	@media(--n) {
+		font-size: 8px;
+		}
+
+	@media(--l) {
+		font-size: 9px;
+		}
+    }
+
+body {
+    min-height: 100%;
+	min-width: 800px;
+
+    font: normal $fs-normal/$lh-normal $ff-main;
+    color: $c-base;
+    }
+
+/* /Core */
+
+
+/* Links
+-------------------------------------------------- */
+
+/*
+Link
+
+markup:
+<a href="#333" title="">Regular link</a>
+
+Styleguide 1
+*/
+
+a {
+    color: $c-white;
+
+    &:hover {
+        color: $c-orange;
+        }
+
+    &:active {
+        color: $c-orange;
+        }
+    }
+
+/* /Links */
+
+
+/* Lists
+-------------------------------------------------- */
+
+ol, ul, menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+
+/* /Lists */
+
+/* /Base
+---------------------------------------------------------------------------------- */

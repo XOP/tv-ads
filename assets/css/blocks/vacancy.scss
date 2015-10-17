@@ -1,0 +1,60 @@
+/* Vacancy
+---------------------------------------------------------------------------------- */
+
+/*
+cssg
+
+	vacancy
+		vacancy_h
+		vacancy_descr
+			...
+
+		[vacancy_note]
+*/
+
+.vacancy {
+	position: relative;
+	width: 100%; // due to flex
+
+	text-align: center;
+	color: $c-white;
+	}
+
+.vacancy_h {
+	position: relative;
+	margin-bottom: $grid-2;
+
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	}
+
+	.vacancy_h_tx {
+		display: inline-block;
+
+		border-bottom: $offset solid;
+		}
+
+	.vacancy_h_note {
+		position: absolute;
+		top: 0; left: auto;
+		margin-left: $offset;
+		}
+
+.vacancy_descr {
+	font-size: $fs-normal;
+	margin: 0 auto;
+	width: 75%;
+	max-width: 140rem;
+	}
+
+.vacancy_descr__big {
+	font-size: $fs-l;
+	}
+
+.vacancy_note {
+	margin-top: $grid-3;
+	font-size: $fs-s;
+	}
+
+/* /Vacancy
+---------------------------------------------------------------------------------- */

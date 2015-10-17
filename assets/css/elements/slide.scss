@@ -1,0 +1,48 @@
+/* Slide
+---------------------------------------------------------------------------------- */
+
+/*
+cssg
+
+	slide
+		slide_ovr
+
+*/
+
+.slide {
+	@mixin cover;
+	position: absolute;
+	z-index: 100;
+
+	box-sizing: border-box;
+
+	height: 100vh;
+	width: 100vw;
+	padding: 5vh 5vw;
+
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+
+	transition: transform $anim-t ease-in-out, opacity calc($anim-t/1.5) ease;
+
+	backface-visibility: hidden;
+
+
+	transform: translateY(0);
+	opacity: 1;
+
+
+	&.__hidden {
+		transform: translateY(100rem);
+		opacity: 0;
+		}
+
+	&.__active {
+		transform: translateY(-100rem);
+		opacity: 0;
+		}
+	}
+
+/* /Slide
+---------------------------------------------------------------------------------- */
